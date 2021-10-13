@@ -1,0 +1,188 @@
+/* registro e inicio */
+.capa{
+    display: none;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    opacity: .7;
+    z-index: 12;
+}
+.registro{
+    display: none;
+    position: fixed;
+    width: 550px;
+    min-width: 470px;
+    height: 720px;
+    background-color: #dd0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border: 5px solid black;
+    border-radius: 5%;
+    z-index: 15;
+}
+.reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+.reg h3{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #dd0;
+}
+.reg i{
+    color: yellow;
+    background-color: #000;
+    position: absolute;
+    font-size: 40px;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+.reg input{
+    width: 70%;
+    margin: 8px;
+    font-size: 14px;
+}
+.reg input:focus{
+    box-shadow: -3px -3px 3px #ff0,  
+    3px -3px 3px #ff0,
+    -3px 3px 3px #ff0,
+    3px 3px 3px #ff0;
+}
+.reg p{
+    padding: 10px 0 0 0;
+    color: #dd0;
+    font-size: 18px;
+}
+.reg .env{
+    width: max-content;
+    font-size: 20px;
+    padding: 10px;
+    margin: 24px;
+    color: #dd0;
+    background-color: black;
+    border: 3px solid yellow;
+    cursor: pointer;
+}
+.env:hover{
+    box-shadow: -3px -3px 3px #ff0,  
+    3px -3px 3px #ff0,
+    -3px 3px 3px #ff0,
+    3px 3px 3px #ff0;
+}
+.iniciar{
+    display: none;
+    position: fixed;
+    width: 550px;
+    min-width: 470px;
+    height: 320px;
+    background-color: #dd0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border: 5px solid black;
+    border-radius: 5%;
+    z-index: 15;
+}
+/* deteccion de errores */
+.capa2{
+    display: none;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #777;
+    opacity: .7;
+    z-index: 17;
+}
+.alerta1, .alerta2{
+    position: fixed;
+    width: 400px;
+    height: 180px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    border: 4px solid black;
+    z-index: 20;
+}
+.alerta1 h4, .alerta2 h4{
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+}
+.alerta1 .conad, .alerta2 .conad{
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.alerta1 .conad i, .alerta2 .conad i{
+    font-size: 30px;
+}
+.alerta1 .conad p, .alerta2 .conad p{
+    font-size: 17px;
+}
+.alerta1{
+    display: none;
+    color: #000;
+    background-color: #ff0;
+}
+.alerta1 .conad{
+    background-color: #000;
+}
+.alerta1 .conad p, .alerta1 .conad i{
+    color: #ff0;
+}
+.alerta1 .conad p{
+    width: 70%;
+    height: 100%;
+}
+.alerta1 #tache3{
+    color: yellow;
+    background-color: #000;
+    position: absolute;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.alerta2{
+    display: none;
+    color: #000;
+    background-color: #f00;
+}
+.alerta2 .conad{
+    background-color: #000;
+}
+.alerta2 .conad p, .alerta2 .conad i{
+    color: #f00;
+}
+.alerta2 .conad p{
+    width: 70%;
+    height: 100%;
+}
+.alerta2 #tache4{
+    color: red;
+    background-color: #000;
+    position: absolute;
+    font-size: 40px;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}

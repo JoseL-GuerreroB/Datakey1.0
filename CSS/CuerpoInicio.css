@@ -1,0 +1,331 @@
+body{
+    display: grid;
+    background:#75d;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 54px 700px 1470px 500px 600px 600px;
+}
+/* imagen global */
+.img{
+    grid-column: 1 /span 12;
+    grid-row: 2;
+    background-image: url(/IMG/lenguaje-programación-portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img h1{
+    text-decoration: overline;
+    color: blue;
+    text-decoration-color: yellow;
+    font-size: 58px;
+    text-shadow: 5px 0 15px rgba(0, 0, 0, .5), 5px 0 15px rgba(0, 0, 0, .5);
+    padding: 30px;
+    transition: all 1s;
+}
+.img p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    margin-top: 20px;
+    font-size: 28px;
+    color: black;
+    transition: all 1s;
+}
+.img p:hover{
+    color: yellow;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: 5px 5px 125px rgba(250, 250, 0, .5), -5px -5px 125px rgba(250, 250, 0, .5),5px 5px 125px rgba(250, 250, 0, .5), -5px -5px 125px rgba(250, 250, 0, .5);
+    transition: all 1s;
+}
+.img h1:hover{
+    background: radial-gradient(#000e, #00f8);
+    box-shadow: 5px 5px 15px rgba(0, 0, 200, .5), -5px -5px 15px rgba(0, 0, 200, .5),5px 5px 15px rgba(0, 0, 200, .5), -5px -5px 15px rgba(0, 0, 200, .5);
+    transition: all 1s;
+}
+/* articulo */
+article{
+    grid-column: 2 /span 10;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+article h2{
+    margin: 40px;
+    font-size: 30px;
+    color: #007;
+    text-shadow: -3px -3px 0 #ff0,  
+    3px -3px 0 #ff0,
+    -3px 3px 0 #ff0,
+    3px 3px 0 #ff0;
+}
+article .apartado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px 10px;
+    transition: all .5s;
+}
+.apartado:hover{
+    width: 100%;
+    margin: 0;
+    transition: all .5s;
+    background-color: #fff;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 1),5px 0 15px rgba(0, 0, 0, .2),-5px 0 15px rgba(0, 0, 0, 1),-5px 0 15px rgba(0, 0, 0, .2);
+}
+article h3{
+    width: 18%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #007;
+    text-shadow: -3px -3px 0 #ff0,  
+    3px -3px 0 #ff0,
+    -3px 3px 0 #ff0,
+    3px 3px 0 #ff0;
+}
+article img, article p{
+    width: 32%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+/* Cursos */
+.tiposCursos{
+    grid-column: 2 /span 10;
+    grid-row: 4;
+    border-top: 4px solid #007;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tiposCursos h4{
+    font-size: 38px;
+    padding: 40px 40px 30px 40px;
+    color: #007;
+    text-shadow: -3px -3px 0 #ff0,  
+    3px -3px 0 #ff0,
+    -3px 3px 0 #ff0,
+    3px 3px 0 #ff0;
+}
+.tiposCursos .tipcur{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px 20px 40px;
+}
+.tipcur .dise{
+    background-image: url(/img/mandalas-1084082_1280.jpg);
+}
+.tipcur .progra{
+    background-image: url(/img/work-731198_1280.jpg);
+}
+.tipcur .mark{
+    background-image: url(/img/entrepreneur-1340649_1280.jpg);
+}
+.tipcur div{
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: all 1s;
+}
+.tipcur div:hover{
+    width: 33%;
+    height: 90%;
+    transition: all 1s;
+}
+.tipcur div h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    width: 100%;
+    height: 20%;
+    background-color: #0008;
+    color: white;
+}
+.tipcur div p{
+    width: 100%;
+    height: 30%;
+    font-size: 13px;
+    color: white;
+    background-color: #000;
+    padding: 15px;
+}
+/* novedades */
+aside{
+    border-top: 4px solid #007;
+    grid-column: 2 /span 10;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px;
+}
+aside h4{
+    font-size: 38px;
+    color: #007;
+    text-shadow: -3px -3px 0 #ff0,  
+    3px -3px 0 #ff0,
+    -3px 3px 0 #ff0,
+    3px 3px 0 #ff0;
+}
+aside i{
+    color: darkblue;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 40px 10px;
+}
+aside img{
+    width: 800px;
+    height: 400px;
+    /* border: 1px solid black; */
+    object-fit: cover;
+}
+aside .fa-chevron-left{
+    background:linear-gradient(-90deg,rgba(255,255,255,1),rgba(255,255,255,0) 100%);
+}
+aside .fa-chevron-right{
+    background:linear-gradient(90deg,rgba(255,255,255,1),rgba(255,255,255,0) 100%);
+}
+.desplazamiento{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* footer */
+footer{
+    background-color: red;
+    grid-column: 1 /span 12;
+    grid-row: 6;
+    background: linear-gradient(0deg, rgba(0,0,150,1), rgba(0,0,200,.8) 95%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.redes{
+    margin-top: 50px;
+    background-color: darkblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+.redes h5{
+    font-size: 35px;
+    padding: 20px 40px 10px 40px;
+    color: yellow;
+}
+.redes .sociales{
+    font-size: 40px;
+    margin: 20px;
+}
+.sociales i{
+    margin: 0 15px;
+    color: yellow;
+}
+.info{
+    background-color: #006;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 50px;
+    height: 100%;
+}
+.info p{
+    width: 20%;
+    color: yellow;
+    margin: 5px;
+}
+/* responcive */
+@media only screen and (max-width:1140px){
+    .img p{
+        width: 42%;
+    }
+    article{
+        grid-column: 1/span 12;
+    }
+    .apartado h3, .apartado p{
+        text-align: center;
+    }
+    .tiposCursos{
+        grid-column: 1 /span 12;
+    }
+    aside img{
+        width: 600px;
+    }
+    .redes{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    body{
+        grid-template-rows: 54px 700px minmax(2000px,1fr) minmax(500px, 1500px) 600px minmax(500px, 700px);
+    }
+    .img p{
+        width: 50%;
+    }
+    article .apartado{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    article h3{
+        width: 80%;
+        text-align: center;
+        padding: 20px;
+    }
+    article img, article p{
+        width: 80%;
+        padding: 20px;
+    }
+    .tipcur{
+        flex-direction: column !important;
+    }
+    .tipcur div{
+        width: 80%;
+        max-height: 400px;
+        min-height: 200px;
+    }
+    .tipcur div:hover{
+        width: 82%;
+        max-height: 420px;
+        min-height: 220px;
+    }
+    aside img{
+        width: 380px;
+    }
+    .redes{
+        width: 90%;
+    }
+    .info{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .info p{
+        width: 45%;
+    }
+}
